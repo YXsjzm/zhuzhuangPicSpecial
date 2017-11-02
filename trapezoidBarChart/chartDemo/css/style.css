@@ -1,0 +1,63 @@
+@charset "utf-8";
+
+body{ font-family:"微软雅黑","宋体"; font-size:14px; color:#48668e;background:#141227; }
+*{box-sizing: border-box;}
+
+.chartContent{width: 1150px;height: 450px;margin:25px auto;position: relative;}
+.chartBar{ width: 730px; height: calc(100%); margin: 0 auto;transform-origin:right center 0;perspective:450px; }
+.chartBar div{transform:rotate3d(1,0,0,-10deg);transform-origin: top center;}
+.chartBarLegend{width: 100%; height:55px; line-height:55px;position: absolute; bottom:-10px; left: 0; text-align: center; padding-left: 85px;}
+.chartBarLegend .legend{ display: inline-block; padding: 0 26.5px; font-size: 16px;}
+.chartBarLegend .legend i{width: 10px;height: 7.5px; margin-right: 10px; display: inline-block;}
+.chartBarLegend .l1{color: #00b4ff;}
+.chartBarLegend .l1 i{background: #00b4ff;}
+.chartBarLegend .l2{color: #13dcf5;}
+.chartBarLegend .l2 i{background: #13dcf5;}
+.chartBarLegend .l3{color: #fbd023;}
+.chartBarLegend .l3 i{background: #fbd023;}
+.chartBarLegend .l4{color: #ff8c10;}
+.chartBarLegend .l4 i{background: #ff8c10;}
+
+.chartBarLeft,.chartBarRight{height: calc(100% - 35px);position:absolute;top: 0; color: #01a9e5;}
+.chartBarLeft{width:190px; left:0;text-align:right;}
+.chartBarRight{width:190px; right: 0; font-size: 16px;}
+.chartBarInfo,.chartBarNum{height: calc(100% / 9); position: relative; padding-top: 25px;}
+.chartBarInfo .time,.chartBarNum .percent {position: relative; font-size: 14px;}
+.chartBarInfo .text,.chartBarNum .text{display: inline-block; line-height: 38px; position: absolute;top: -10px;}
+.chartBarInfo .text{right: 0;padding-left: 42px; }
+.chartBarNum .text{left: 0; color: #00f0ff; font-size: 16px;}
+
+.chartBarInfo1{right:-5px;top: 5px;}
+.chartBarInfo2{right:-12.5px;top: 12.5px;}
+.chartBarInfo3{right:-20px;top: 17.5px;}
+.chartBarInfo3 .time{top:2.5px;}
+.chartBarInfo4{right:-27.5px;top: 17.5px;}
+.chartBarInfo4 .time{top:-2.5px;}
+.chartBarInfo5{right:-35px;top: 17.5px;}
+.chartBarInfo5 .time{top:-2.5px;}
+.chartBarInfo6{right:-42.5px;top: 12.5px;}
+.chartBarInfo6 .time{top:-2.5px;}
+.chartBarInfo7{right:-50px;top: 10px;}
+.chartBarInfo7 .time{top:-5px;}
+.chartBarInfo8{right:-57.5px;top: 2.5px;}
+.chartBarInfo8 .time{top:-5px;}
+.chartBarInfo9{right:-65px;top: -5px;}
+.chartBarInfo9 .time{top:-5px;}
+.chartBarInfo .error,.chartPieTitle .error{ color:#fff;text-shadow: 0px 0px 10px #ff002a;}
+
+.chartBarNum1{left:-5px;top: 5px;}
+.chartBarNum2{left:-12.5px;top: 12.5px;}
+.chartBarNum3{left:-20px;top: 17.5px;}
+.chartBarNum3 .percent{top:-2.5px;}
+.chartBarNum4{left:-27.5px;top: 17.5px;}
+.chartBarNum4 .percent{top:-2.5px;}
+.chartBarNum5{left:-35px;top:  17.5px;}
+.chartBarNum5 .percent{top:-2.5px;}
+.chartBarNum6{left:-42.5px;top: 12.5px;}
+.chartBarNum6 .percent{top:-2.5px;}
+.chartBarNum7{left:-50px;top: 10px;}
+.chartBarNum7 .percent{top:-2.5px;}
+.chartBarNum8{left:-57.5px;top: 2.5px;}
+.chartBarNum8 .percent{top:-2.5px;}
+.chartBarNum9{left:-65px;top: -2.5px;}
+.chartBarNum9 .percent{top:-5px;}
